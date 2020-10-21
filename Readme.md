@@ -14,6 +14,9 @@ A esta imagen se le comprueba la "salud" con el health check
 docker run -d --rm --name docker-health-check --label autoheal=true -p 5000:5000 docker-health-check
 ```
 
+Es necesario especificar el label ```--label autoheal=true``` para que la imagen autoheal lo encuentre
+
+
 ## Ejecución de la imagen autoheal
 Esta imagen es usada para reiniciar los contenedores "no saludables"
 ```shell
